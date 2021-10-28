@@ -1,0 +1,58 @@
+<!-- valter fallsterljung -->
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="hängagubbe.css">
+  <title>hängagubbe</title>
+</head>
+
+<body>
+  <section class="container">
+    <article>
+      <p class="mistakeBox">Antal fel:</p>
+      <p class="mistakeBox" id='mistakes'>0 </p>
+      <p class="mistakeBox"> av </p>
+      <p class="mistakeBox" id='maxWrong'></p>
+    </article>
+    <article>
+      <img id='hangmanPic' src="hangman1.png" alt="fel">
+      <p>Gissa ordet:</p>
+      <p id="hiddenWord">slumpat ord</p>
+      <article id="buttons"></article>
+      <p id="usedLetters"> </p>
+      <p id="outcome"></p>
+
+    </article>
+  </section>
+  <section class="container">
+    <section>
+      <img id="codePicture" src="forloophard.png" alt="fel">
+    </section>
+    <section id="aidContainer">
+      <p id="description"></p>
+      <button class="aidButtons" onclick="giveClue()">Ledtråd</button>
+      <button class="aidButtons" id="nextButton" onClick="Reset()">Nästa</button>
+      <button class="aidButtons" onclick="RestartGame()">Starta om spelet</button>
+      <button class="aidButtons" onclick="Instructions()">Instruktioner</button>
+      <p id="instructions">Bilden saknar ett ord. 
+        Gissa på vad för bokstäver ordet innehåller genom att trycka på knapparna åt vänster. 
+        De bokstäver du gissat på kommer synas under knapparna. 
+        Om du fastnar och vill ha en ledtråd så kan du trycka på Ledtråd knappen till vänster. 
+        Om du vill starta om den nuvarande frågan så kan du trycka på nästa. 
+        När du tillslut gissat rätt på hela ordet eller du har kommit upp i 6 fel så avslutas den nuvarande frågan. 
+        Tryck då på nästa för att komma vidare till nästa fråga. 
+        Om du vill starta om spelet från början så kan du trycka på Starta om spelet knappen.
+      </p>
+      <p id="clue0"></p>
+      <p id="clue1"></p>
+      <p id="clue2"></p>
+    </section>
+  </section>
+  <script src="hängagubbe.js"></script>
+</body>
+
+</html>

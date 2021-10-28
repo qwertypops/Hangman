@@ -1,0 +1,65 @@
+/* valter fallsterljung */
+html{
+    margin:0 auto;
+    width: auto;
+}
+section.container{
+    float: left;
+    display: table;
+     max-width:1200px; 
+     width:auto;
+     margin:0 auto
+}
+section#aidContainer{
+    float: left;
+    height: 250px;
+    width: 600px;
+    background-color: darkcyan;
+}
+.letterButton.disabled{
+    margin-bottom: 5px;
+    margin-left: 3px;
+    background-color: rgb(122, 124, 153);
+    color: rgb(126, 218, 247);
+    font-size: 19px;
+    border-radius: 5px;
+    border-style: double;
+    border-color: rgb(24, 7, 1);
+    opacity: 0.5;
+    
+}
+article#buttons{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    
+}
+button.letterButton{
+    margin-bottom: 5px;
+    margin-left: 3px;
+    background-color: rgb(72, 83, 228);
+    color: rgb(126, 218, 247);
+    font-size: 19px;
+    border-radius: 5px;
+    border-style: double;
+    border-color: rgb(24, 7, 1);
+    
+}
+button#restartGame{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+button#next{
+    font-size: 25px;
+    border-style: double;
+    border-color: rgb(24, 7, 1);
+}
+button.aidButtons{
+    background-color: rgb(144, 223, 186);
+    border-style: double;
+    margin-left: 5px;
+}
+p.mistakeBox{
+    float: left;
+    margin-left: 2px;
+}
